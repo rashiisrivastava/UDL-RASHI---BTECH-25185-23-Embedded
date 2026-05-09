@@ -183,27 +183,6 @@ Total:
 
 ---
 
-# Why RMT Was Used Instead of Bit-Banging
-
-Initially, bit-banging was considered for generating the WS2812 waveform manually using GPIO toggling.
-
-However, WS2812 timing is extremely strict:
-
-* Nanosecond-level precision required
-* CPU interrupts can break timing
-* Software delays are unreliable
-
-The ESP32 RMT peripheral solves these problems because:
-
-* Hardware generates exact timings
-* CPU is free during transmission
-* More stable and scalable
-* Easier to expand for multiple LEDs
-
-Therefore, RMT was selected as the final implementation approach.
-
----
-
 # Platform-Specific Decisions
 
 ## Why ESP32?
