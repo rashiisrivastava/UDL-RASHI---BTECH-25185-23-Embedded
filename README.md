@@ -330,6 +330,22 @@ The LED cycles through:
 with 1-second delay between transitions.
 
 ---
+## LLM Chat Log
+
+As mentioned in the assessment guidelines:
+
+> “If you used an LLM to assist you, you must include the full chat log. There is zero penalty for using an LLM, provided you use it as a learning or verification tool rather than just copying a direct output.”
+
+ChatGPT was used during development as a learning and verification tool for:
+- Understanding WS2812B communication protocol
+- Studying timing requirements and tolerances
+- Learning ESP32 RMT peripheral operation
+- Verifying timing calculations
+- Reviewing and improving code structure
+- Improving documentation and README formatting
+
+The final implementation was manually understood, modified, tested, and verified before submission.
+chat log link: https://chatgpt.com/share/69ff5fa0-6784-8323-a09e-0853dade7bf1 
 
 # Conclusion
 
